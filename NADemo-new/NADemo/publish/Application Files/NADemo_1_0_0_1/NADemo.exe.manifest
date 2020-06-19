@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="NADemo.exe" version="1.0.0.1" publicKeyToken="2994e8e6f796ff3d" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="NADemo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="NADemo.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+         若想要更改 Windows 用户帐户控制级别，请
+         将 requestedExecutionLevel 节点替换为下述某项。
+
+       <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+       <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+       <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        若想要使用文件和注册表虚拟化以实现向后
+        兼容，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NADemo.exe" size="41440">
+      <assemblyIdentity name="NADemo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/W6EdxvEmSdMaYbnD0zCs20Vvc7olQArNJ8bwJj0+IY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="653824">
+      <assemblyIdentity name="Newtonsoft.Json" version="10.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lz/XDOSOWsQzoQG0KHFoDFHi/roq7sPUAN6kEVrzong=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="NADemo.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YyXx11OQ8Y9qQaMsAPfgWQIUIJMPT4Sw3i2UQTU2sRM=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-GV2PTN0\Phylo" issuerKeyHash="507313e9eb7d074108028f824304fdb5e461df2f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>K6PTDxLUiqgRosgBKEONbnTAdiHlmoCW5qHmR1u7aJ8=</DigestValue></Reference></SignedInfo><SignatureValue>AFpJi3h86cDkGcPikap8dzeoTUD4t0dpLCBxAGJik7Cj/zfqsy6Au83LRURj9J6B6ng5Fx5uGnMC/UXSpOf+okTjGQOVPecf2pg1kw+6OgQAavsUQ2klqn3EArmMy5qLeLpzndzY8lyL5v1NQSavcEUe88+28ela5CFqwHyvC70=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tfBaKGnaYx6/zkFvQ22mlbwObsQuTGzprNmqmmrsjYz1fiilPrgAhFe5Xd0Od22YuzKZMh810tGEFmiHq5tN97cGLI/S9YKM4EtKt5nLOZbsEwfguC4lgCeTEWlV3/iAVXs0SoKnVkmFIUkIyquJ7tAJPXucqKTd8xTOXVKg43E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="9f68bb5b47e6a1e696809ae52176c0746e8d432801c8a211a88ad4120fd3a32b" Description="" Url=""><as:assemblyIdentity name="NADemo.exe" version="1.0.0.1" publicKeyToken="2994e8e6f796ff3d" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-GV2PTN0\Phylo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>PsS80Ef0+MjcXirFfPmCmJ1TaRw0mu1MnTciqVLhQaE=</DigestValue></Reference></SignedInfo><SignatureValue>rAyZwNg4S32LeKsjyxWKj/8e5tMxf499wwunFtb9ebJaoH4zsC3q92GFVxba1TGh9s2BNL78SkPasbkRr4OvhITJtEtuMySpZp6VQev3WrtuxqfTpADPfToS6YL8eSTjrbGibnSeITDmQBp1n1fn2hNrDPs9UBPpkRuFF1BfBdg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tfBaKGnaYx6/zkFvQ22mlbwObsQuTGzprNmqmmrsjYz1fiilPrgAhFe5Xd0Od22YuzKZMh810tGEFmiHq5tN97cGLI/S9YKM4EtKt5nLOZbsEwfguC4lgCeTEWlV3/iAVXs0SoKnVkmFIUkIyquJ7tAJPXucqKTd8xTOXVKg43E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQOXFSbpcYAYhOZrBUO8rMqDANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEcAVgAyAFAAVABOADAAXABQAGgAeQBsAG8wHhcNMTgwMTA4MDE1NjMyWhcNMTkwMTA4MDc1NjMyWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEcAVgAyAFAAVABOADAAXABQAGgAeQBsAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALXwWihp2mMev85Bb0NtppW8Dm7ELkxs6azZqppq7I2M9X4opT64AIRXuV3dDndtmLsymTIfNdLRhBZoh6ubTfe3BiyP0vWCjOBLSreZyzmW7BMH4LguJYAnkxFpVd/4gFV7NEqCp1ZJhSFJCMqrie7QCT17nKik3fMUzl1SoONxAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAViPjhegaXwMEp8qV1TZYZHhEcOwRjN9GfEIfPE9esz0nnHMOWPfPC5keHy+xQXv5Iwqxlwm75uaJjfsF6UaXatMUZII19+tfziS4OsHp5SWouNyqhc5VI0NfMynr+3d6YhlNOdbrudecczy7ugjfUg5mlZgMqJHe8WIK3dZEq5c=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

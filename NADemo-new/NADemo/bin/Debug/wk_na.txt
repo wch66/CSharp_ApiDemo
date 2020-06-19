@@ -1,0 +1,7 @@
+系统找不到指定的文件。
+   在 System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   在 System.Security.Cryptography.X509Certificates.X509Utils._QueryCertFileType(String fileName)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate.LoadCertificateFromFile(String fileName, Object password, X509KeyStorageFlags keyStorageFlags)
+   在 System.Security.Cryptography.X509Certificates.X509Certificate2..ctor(String fileName, String password)
+   在 NADemo.NASDK.PostUrl(String apiPath, String postData, WebHeaderCollection headers, String method, String contenttype, String p12certfile, String cerpassword) 位置 e:\my document\systemdocument\visual studio 2017\Projects\HWWork\NADemo\NASDK.cs:行号 299
+   在 NADemo.NASDK.getToken() 位置 e:\my document\systemdocument\visual studio 2017\Projects\HWWork\NADemo\NASDK.cs:行号 44200{"accessToken":"808728fdee1e51dcf5ec78730d26918","tokenType":"bearer","refreshToken":"385df38b8577e749992ea9cc549ee83","expiresIn":3600,"scope":"default"}200{"deviceId":"156b00da-305a-49ed-9121-cfbb2128b8a1","verifyCode":"865352030163219","timeout":0,"psk":"836b2319da7a84b3ac76e9843d1ee40d"}204200{"deviceId":"a8fccdbc-f1b9-4386-b290-1d2c76ac52f5","verifyCode":"865352030163215","timeout":0,"psk":"cbb0264516fbe3734ef95a7ff9d49ea5"}204200{"deviceId":"2dbc352d-c5b6-4862-ade7-84918f9a5cd3","verifyCode":"865352030163218","timeout":0,"psk":"9584f2cb2aa7f22d79ad5f80909a36b6"}
